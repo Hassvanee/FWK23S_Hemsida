@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap-Hassvanee</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="HS-portfolio.css" />
+  </head>
+  <body>
+
+    <!-- En jumbotron för att visa en välkomshäslning som är centrerad-->
+    <div class="jumbotron text-center">
+      <h4>Hej! Mitt namn är</h4>
+      <h1 class="display-4">Hassvanee Samaae</h1>
+      <p class="lead">Välkommen till min hemsida.</p>
+
+      <!-- En horisontell linje -->
+      <hr class="my-4">
+      
+      <!-- En ledtext för knapparna-->
+      <p class="lead">
+
+        <!-- Knapparna med stor storleksklass och länkar som ska länkas till min "ex.om mig"-sida -->
+        <a class="btn btn-primary btn-lg" href="#" role="button">Om mig</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Arbete</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Fritid</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Kontakt</a>
+      </p>
+    </div>
+
+    <!-- En container där jag kan organisera innehållet-->
+    <div class="container">
+      <div class="row">
+
+        <!-- Första kolumnen om mig-->
+        <div class="col-sm-4">
+          <h3>Om mig</h3>
+          <p>
+            Jag heter Hassvanee Samaae och jag är 33 år. Jag är född i Sverige
+            men mina föräldrar kommer från Thailand. Jag har fem syskon.
+          </p>
+          <p>
+            Jag bor i Vällingby med min man och våra två barn. Jag har en pojke
+            som är 9 år och en flicka som är 6 år.
+          </p>
+        </div>
+        <!-- Andra kolumnen om mitt arbete-->
+        <div class="col-sm-4">
+          <h3>Arbete</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <!-- Tredje kolumnen om min fritid-->
+        <div class="col-sm-4">
+          <h3>Fritid</h3>
+          <p>
+            På fritiden gillar jag att städa. Jag tycker också om att titta på
+            serier, koreanska tv-serier. När hela familjen är ledig gillar vi
+            att umgås med hela släkten och alla barnbarn träffas hos mormor.
+          </p>
+          <p>
+            Jag gillar också att vara ute i naturen och då går vi och campar då
+            och då.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- En till container där jag kan organisera innehållet-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- En container för kontaktformuläret-->
+    <div class="container">
+      <div class="text-center">
+        <h2>Kontakt</h2>
+      </div>
+
+      <!-- En tom kolumn till vänster för balans-->
+      <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+
+        <!-- En kolumn  för kontaktformuläret-->
+        <div class="col-md-6">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="fname">Namn:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fname"
+                name="fname"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Email:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lname"
+                name="lname"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Ämne:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Meddelande:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <!-- En knapp för att skicka in formuläret och att knappen ska vara i mitten-->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Skicka in</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- En tom kolumn till höger för balans-->
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
