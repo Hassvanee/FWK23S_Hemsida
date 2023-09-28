@@ -1,24 +1,21 @@
+
+
 body{
-    background-color: rgb(121, 175, 121);
-    border-radius: 10px;
+    background-image: url('light-green-leaves-pattern-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px; 
 }
- /* margin: 8px auto;
+
+ /*   background-color: rgb(121, 175, 121);
+    border-radius: 10px;margin: 8px auto;
     padding: 8px;
     width: 980px;
     */
 
-.navbar {
-    padding: 1em;
-    background-color: rgb(121, 175, 121);
-    
-}
 
-.navbar a {
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid black;
-    text-decoration: none;
-}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { ... }
@@ -35,3 +32,27 @@ body{
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
 
+
+/*
+<!-- En navigationsmeny där man kan välja-->
+    <nav class="navbar">
+      <a href="#">Om mig</a>
+      <a href="#">Arbete</a>
+      <a href="#">Fritid</a>
+      <a href="#">Kontakt</a>
+    </nav> 
+    
+    .navbar {
+    padding: 1em;
+    background-color: rgb(121, 175, 121);
+    
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    text-decoration: none;
+}*/
+
+    /*<img src="light-green-leaves-pattern-background.jpg" class="img-fluid" alt="Responsive image"> 
