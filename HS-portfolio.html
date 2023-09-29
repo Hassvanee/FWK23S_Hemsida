@@ -15,14 +15,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="HS-portfolio.css" />
+
+    <style>
+     /* För skärmar som är mindre än 768px (t.ex. mobiltelefoner) */
+      @media (max-width: 767px) {
+
+          /* Ändra teckenstorleken på rubriktexten */
+          .jumbotron h1 {
+              font-size: 36px;
+          }
+      }
+
+      /* För skärmar som är större än eller lika med 768px (t.ex. surfplattor och datorer) */
+      @media (min-width: 768px) {
+
+          /* Justera kolumnbredderna i rutnätet */
+          .col-sm-4 {
+              width: 33.33%;
+          }
+      }
+  </style>
+
   </head>
 
   <body>
 
     <div class="background-image">
 
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hem
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Om Mig</a></li>
+          <li><a href="#">Arbete</a></li>
+          <li><a href="#">Fritid</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+   
     <!-- En jumbotron för att visa en välkomshäslning som är centrerad-->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="background-color: rgb(232, 253, 226);">
       <h4>Hej! Mitt namn är</h4>
       <h1 class="display-4">Hassvanee Samaae</h1>
       <p class="lead">Välkommen till min hemsida.</p>
@@ -41,12 +73,13 @@
       </p>
     </div>
 
-    <!-- En container där jag kan organisera innehållet-->
-    <div class="container">
+ <!-- En container där jag kan organisera innehållet-->
+    <div class="container text-center">
       <div class="row">
 
         <!-- Första kolumnen om mig-->
         <div class="col-sm-4">
+          <img src="min familj.JPG" class="img-circle person" alt="min familj" width="255" height="255">
           <h3>Om mig</h3>
           <p>
             Jag heter Hassvanee Samaae och jag är 33 år. Jag är född i Sverige
@@ -59,6 +92,7 @@
         </div>
         <!-- Andra kolumnen om mitt arbete-->
         <div class="col-sm-4">
+          <img src="Blomma.jpg" class="img-circle person" alt="Blomma" width="255" height="255">
           <h3>Arbete</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>
@@ -68,9 +102,10 @@
         </div>
         <!-- Tredje kolumnen om min fritid-->
         <div class="col-sm-4">
+          <img src="plantera.jpg" class="img-circle person" alt="planta" width="255" height="255">
           <h3>Fritid</h3>
           <p>
-            På fritiden gillar jag att städa. Jag tycker också om att titta på
+            På fritiden gillar jag att plantera växter. Jag tycker också om att titta på
             serier, koreanska tv-serier. När hela familjen är ledig gillar vi
             att umgås med hela släkten och alla barnbarn träffas hos mormor.
           </p>
@@ -82,40 +117,9 @@
       </div>
     </div>
 
-    <!-- En till container där jag kan organisera innehållet-->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
-        </div>
-      </div>
-    </div>
-
     <!-- En container för kontaktformuläret-->
     <div class="container">
-      <div class="text-center">
-        <h2>Kontakt</h2>
+        <h2 class="text-center">Kontakt</h2>
       </div>
 
       <!-- En tom kolumn till vänster för balans-->
@@ -173,6 +177,7 @@
             </div>
           </form>
         </div>
+      
 
         <!-- En tom kolumn till höger för balans-->
         <div class="col-md-3"></div>
